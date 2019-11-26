@@ -1,0 +1,46 @@
+<section class="backgrounk">
+    <div class="row h-100 padding">
+        <div class="col-lg-4">
+        </div>
+
+        <div class="col-lg-4 text-center login-background my-auto">
+            <form [formGroup]='loginForm' (ngSubmit)="onSubmit()">
+                <h4>Login App Service</h4>
+                <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+                <div class="form-group">
+                    <mat-form-field>
+                        <input matInput placeholder="Tài Khoản"
+                         formControlName="account" 
+                         >
+                         <mat-error>{{getErrorAccount()}}</mat-error>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Mật Khẩu" [type]="hide ? 'password' : 'text'"
+                        formControlName="password" 
+                        >
+                        <mat-error>{{getErrorPassword()}}</mat-error>
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                            [attr.aria-pressed]="hide">
+                            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </div>
+                <div class="button-login">
+                    <span class="float-left">Quên mật khẩu ?</span>
+                    <button mat-flat-button color="warn" class="float-right btn-line mat-flat-btn">
+                        Đăng nhập
+                        <div class="loader float-left" *ngIf="loading"></div>
+                    </button>
+                </div>
+                <br><br>
+            </form>
+        </div>
+        <div class="col-lg-4">
+        </div>
+    </div>
+
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+</section>

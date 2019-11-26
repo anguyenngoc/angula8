@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "ngoc",
+      "lastName": "nguyen van",
+      "userName": "admin",
+      "password": "admin",
+      "email": "nguyenngoc@gmail.com",
+      "phoneNumber": 9876666666,
+      "role": 1,
+      "token": "fake-jwt-token1"
+    },
+    {
+      "id": 2,
+      "firstName": "dddd",
+      "lastName": "nguyen dddd",
+      "userName": "dddd",
+      "password": "dddd",
+      "email": "dddd@gmail.com",
+      "phoneNumber": 9876666666,
+      "role": 2,
+      "token": "fake-jwt-token2"
+    },
+    {
+      "id": 3,
+      "firstName": "bdssf",
+      "lastName": "nguyen bdssf",
+      "userName": "bdssf",
+      "password": "bdssf",
+      "email": "nguyenngoc@gmail.com",
+      "phoneNumber": 9876666666,
+      "role": 3,
+      "token": "fake-jwt-token3"
+    },
+    {
+      "id": 4,
+      "firstName": "ngao",
+      "lastName": "ngao van",
+      "userName": "ngao",
+      "password": "ngao",
+      "email": "ngao@gmail.com",
+      "phoneNumber": 9876666666,
+      "role": 3,
+      "token": "fake-jwt-token4"
+    },
+    {
+      "id": 5,
+      "firstName": "loc",
+      "lastName": "nguyen loc",
+      "userName": "loc",
+      "password": "loc",
+      "email": "loc@gmail.com",
+      "phoneNumber": 9876666666,
+      "role": 3,
+      "token": "fake-jwt-token5"
+    },
+    {
+      "id": 6,
+      "firstName": "huy",
+      "lastName": "nguyen huy",
+      "userName": "huy",
+      "password": "huy",
+      "email": "huy@gmail.com",
+      "phoneNumber": 9876666666,
+      "role": 3,
+      "token": "fake-jwt-token6"
+    },
+    {
+      "id": 7,
+      "firstName": "hdasdauy",
+      "lastName": "nguasdyen huy",
+      "userName": "aa",
+      "password": "aa",
+      "email": "aa@gmail.com",
+      "phoneNumber": 9876666666,
+      "role": 3,
+      "token": "fake-jwt-token7"
+    },
+    {
+      "id": 8,
+      "firstName": "hdduy",
+      "lastName": "dd huy",
+      "userName": "dd",
+      "password": "dd",
+      "email": "dd@gmail.com",
+      "phoneNumber": 9876666666,
+      "role": 3,
+      "token": "fake-jwt-token8"
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    }
+  ]
+}

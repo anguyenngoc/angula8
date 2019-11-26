@@ -1,0 +1,144 @@
+.backgrounk {
+    background-image: linear-gradient(128deg, gray, white);
+    padding: 50px;
+}
+.login-background {
+    background-image: linear-gradient(-128deg, gray, #EEEEEE);
+    border-radius: 20px;
+    padding: 20px;
+    -webkit-animation: mymove 5s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    z-index: 1000;
+    /* transform: translateY(40%);
+    height: auto; */
+}
+
+@-webkit-keyframes mymove {
+    50% {
+        box-shadow: 10px 20px 30px #EFEBE9;
+    }
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 10px 20px 30px #F5F5F5;
+    }
+}
+
+.login-background h4 {
+    color: #EFEBE9;
+}
+
+.form-group>* {
+    width: 100%;
+    padding: 10px;
+}
+
+.button-login {
+    padding: 10px;
+}
+
+.button-login span {
+    color: #3F51B5;
+}
+/* .btn-line {
+    bottom: 10px;
+} */
+
+/*wave*/
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(/assets/images/wave.png);
+    background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+    animation: animate 20s linear infinite;
+    z-index: 100;
+    opacity: 0.5;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+section .wave.wave2 {
+    animation: animate2 10s linear infinite;
+    z-index: 99;
+    opacity: 0.1;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3 {
+    animation: animate 20s linear infinite;
+    z-index: 98;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 20px;
+}
+
+section .wave.wave4 {
+    animation: animate2 10s linear infinite;
+    z-index: 97;
+    opacity: 0.4;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
+
+/*loader*/
+.mat-flat-btn {
+    position: relative;
+}
+.loader {
+    border: 2px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 2px solid gray;
+    width: 14px;
+    height: 14px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    position: absolute;
+    bottom: 10px;
+    left: -1px;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
